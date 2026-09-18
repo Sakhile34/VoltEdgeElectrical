@@ -1,0 +1,233 @@
+/* ============================
+   RESET & BASE STYLES
+============================ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================
+   TYPOGRAPHY
+============================ */
+h1, h2 {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ============================
+   HEADER
+============================ */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: white;
+}
+
+/* ============================
+   NAVIGATION (Flexbox layout)
+============================ */
+nav {
+    background-color: #f4c400;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #333;
+}
+
+/* ============================
+   MAIN CONTENT
+============================ */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Services list laid out with CSS Grid */
+main ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+main ul li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================
+   BUTTON
+============================ */
+button {
+    background-color: #f4c400;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #d9ac00;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* ============================
+   FOOTER
+============================ */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+============================ */
+
+/* Tablet breakpoint */
+@media (max-width: 768px) {
+    main ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 8px 0;
+    }
+
+    main ul {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+/* ============================
+   FORMS
+============================ */
+form {
+    max-width: 500px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f4c400;
+}
+
+/* ============================
+   IMAGES
+============================ */
+.hero-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.content-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+@media (max-width: 480px) {
+    .hero-img {
+        max-height: 200px;
+    }
+}
