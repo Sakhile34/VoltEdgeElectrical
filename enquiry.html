@@ -2,11 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+      content="VoltEdge Electrical provides professional electrical installation, maintenance and repair services.">
+
+<meta name="keywords"
+      content="electrician,electrical services,wiring,electrical repairs,electrical maintenance">
+
+<meta name="author"
+      content="Sakhile">
     <title>Enquiry - VoltEdge Electrical</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+<script src="js/script.js"></script>
 
 <body>
 
@@ -60,6 +73,44 @@
                 <button type="submit">Submit Enquiry</button>
             </form>
         </section>
+
+        <h2>Service Enquiry</h2>
+
+<form id="enquiryForm">
+
+<input type="text"
+       id="name"
+       placeholder="Full Name"
+       required>
+
+<br><br>
+
+<input type="email"
+       id="email"
+       placeholder="Email"
+       required>
+
+<br><br>
+
+<select id="service">
+
+<option>Electrical Installation</option>
+<option>Electrical Repairs</option>
+<option>Electrical Maintenance</option>
+
+</select>
+
+<br><br>
+
+<button type="submit">
+
+Submit Enquiry
+
+</button>
+
+</form>
+
+<p id="response"></p>
 
     </main>
 

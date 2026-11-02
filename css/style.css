@@ -231,3 +231,19 @@ textarea:focus {
         max-height: 200px;
     }
 }
+
+.accordion-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#003366;
+    color:white;
+    cursor:pointer;
+    margin-top:5px;
+}
+
+.accordion-content{
+    display:none;
+    padding:15px;
+    background:#f4f4f4;
+}
